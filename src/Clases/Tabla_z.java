@@ -2,14 +2,14 @@ package Clases;
 
 public class Tabla_z extends Ejercicio {
 
-    public Tabla_z(int nConfianza2, int muestra, double promedio, double varianza, int nConfianza, int desviacionE) {
+    public Tabla_z(int muestra, double promedio, double varianza, int nConfianza, int desviacionE) {
         super(muestra, promedio, varianza, nConfianza, desviacionE);
     }
     
-    public double nivelConfianza(int nConfianza2) {
+    public double nivelConfianza() {
         double alfa;
         double porcentaje;
-        porcentaje = (nConfianza2 / 100);
+        porcentaje = (super.getnConfianza() / 100);
         alfa = 1 - porcentaje;
         return alfa;
     }
@@ -28,7 +28,19 @@ public class Tabla_z extends Ejercicio {
     }
     
     public double intervaloA(){
-        
+        double inta;
+        double raiz = Math.sqrt(super.getMuestra());
+        double tz = localizarTabla(numeroZ(nivelConfianza()));
+        inta = super.getPromedio() - tz *(super.getDesviacionE()/raiz);
+        return inta;
+    }
+    
+    public double intervaloB(){
+        double intb;
+        double raiz = Math.sqrt(super.getMuestra());
+        double tz = localizarTabla(numeroZ(nivelConfianza()));
+        intb = super.getPromedio() + tz *(super.getDesviacionE()/raiz);
+        return intb;
     }
 
 }
