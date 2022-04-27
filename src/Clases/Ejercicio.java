@@ -13,7 +13,7 @@ public class Ejercicio {
     private int muestra;
     private double promedio;
     private double varianza;
-    int nConfianza;
+    private int nConfianza;
     private double z;
 
     public Ejercicio(int muestra, double promedio, double varianza, int nConfianza) {
