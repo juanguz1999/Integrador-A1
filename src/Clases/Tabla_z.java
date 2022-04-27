@@ -2,8 +2,8 @@ package Clases;
 
 public class Tabla_z extends Ejercicio {
 
-    public Tabla_z(int nConfianza2, int muestra, double promedio, double varianza, int nConfianza) {
-        super(muestra, promedio, varianza, nConfianza);
+    public Tabla_z(int nConfianza2, int muestra, double promedio, double varianza, int nConfianza, int desviacionE) {
+        super(muestra, promedio, varianza, nConfianza, desviacionE);
     }
     
     public double nivelConfianza(int nConfianza2) {
