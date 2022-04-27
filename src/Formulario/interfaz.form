@@ -95,7 +95,7 @@
                                   <Component id="txtProm" alignment="1" min="-2" pref="111" max="-2" attributes="0"/>
                                   <Component id="txtVarianza" alignment="1" min="-2" pref="111" max="-2" attributes="0"/>
                               </Group>
-                              <Component id="jTextField4" alignment="1" min="-2" pref="111" max="-2" attributes="0"/>
+                              <Component id="txtNivelConfianza" alignment="1" min="-2" pref="111" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <Group type="102" attributes="0">
@@ -129,7 +129,7 @@
                           <Component id="txtVarianza" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jTextField4" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="txtNivelConfianza" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
@@ -207,7 +207,7 @@
         </Component>
         <Component class="javax.swing.JTextField" name="txtVarianza">
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField4">
+        <Component class="javax.swing.JTextField" name="txtNivelConfianza">
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel6">
           <Properties>

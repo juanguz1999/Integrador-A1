@@ -21,7 +21,7 @@ public class interfaz extends javax.swing.JFrame {
         txtMuestra = new javax.swing.JTextField();
         txtProm = new javax.swing.JTextField();
         txtVarianza = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
+        txtNivelConfianza = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
@@ -120,7 +120,7 @@ public class interfaz extends javax.swing.JFrame {
                                 .addComponent(txtMuestra, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(txtProm, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(txtVarianza, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jTextField4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(txtNivelConfianza, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE))
@@ -146,7 +146,7 @@ public class interfaz extends javax.swing.JFrame {
                         .addComponent(txtVarianza, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtNivelConfianza, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel5)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel3)
@@ -241,6 +241,7 @@ public class interfaz extends javax.swing.JFrame {
         int muestra = Integer.parseInt(txtMuestra.getText());
         double promedio = Double.parseDouble(txtProm.getText());
         double varianza = Double.parseDouble(txtVarianza.getText());
+        int nivelC = Integer.parseInt(txtNivelConfianza.getText());
         
         
     }//GEN-LAST:event_btnCalcularActionPerformed
@@ -307,8 +308,8 @@ public class interfaz extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea jTextArea1;
-    private javax.swing.JTextField jTextField4;
     private javax.swing.JTextField txtMuestra;
+    private javax.swing.JTextField txtNivelConfianza;
     private javax.swing.JTextField txtProm;
     private javax.swing.JTextField txtVarianza;
     // End of variables declaration//GEN-END:variables
