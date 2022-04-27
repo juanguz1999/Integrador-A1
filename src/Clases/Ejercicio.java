@@ -56,12 +56,12 @@ public class Ejercicio {
         this.varianza = varianza;
     }
 
-    public double getZ() {
-        return z;
+    public int getDesviacionE() {
+        return desviacionE;
     }
 
-    public void setZ(double z) {
-        this.z = z;
+    public void setDesviacionE(int desviacionE) {
+        this.desviacionE = desviacionE;
     }
     
 }
