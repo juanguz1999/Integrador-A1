@@ -2,14 +2,10 @@ package Clases;
 
 public class Tabla_z extends Ejercicio {
 
-    int nConfianza2;
-
     public Tabla_z(int nConfianza2, int muestra, double promedio, double varianza, int nConfianza) {
         super(muestra, promedio, varianza, nConfianza);
-        this.nConfianza2 = nConfianza2;
     }
-
-
+    
     public double nivelConfianza(int nConfianza2) {
         double alfa;
         double porcentaje;
@@ -27,11 +23,12 @@ public class Tabla_z extends Ejercicio {
     }
 
     public double localizarTabla(double tz) {
-        double a;
-        int b;
-        switch (tz){
-            case 1: a = 1;
-        }
+        double a = 0;
+        return a;
+    }
+    
+    public double intervaloA(){
+        
     }
 
 }

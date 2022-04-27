@@ -14,19 +14,15 @@ public class Ejercicio {
     private double promedio;
     private double varianza;
     private int nConfianza;
-    private double z;
+    private int desviacionE;
 
-    public Ejercicio(int muestra, double promedio, double varianza, int nConfianza) {
+    public Ejercicio(int muestra, double promedio, double varianza, int nConfianza, int desviacionE) {
         this.muestra = muestra;
         this.promedio = promedio;
         this.varianza = varianza;
         this.nConfianza = nConfianza;
-    }
-
-    //Intervalo de confianza con varianza conocida
-
-    
-    
+        this.desviacionE = desviacionE;
+    }    
     
     public double getnConfianza() {
         return nConfianza;
