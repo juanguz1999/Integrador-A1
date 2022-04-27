@@ -243,7 +243,6 @@ public class interfaz extends javax.swing.JFrame {
         double varianza = Double.parseDouble(txtVarianza.getText());
         int nivelC = Integer.parseInt(txtNivelConfianza.getText());
         
-        Tabla_z c=new Tabla_z(muestra, promedio, varianza, ICONIFIED, HIDE_ON_CLOSE)
         
     }//GEN-LAST:event_btnCalcularActionPerformed
 

@@ -26,7 +26,7 @@ public class Tabla_z extends Ejercicio {
     public double intervaloA(){
         double inta;
         double raiz = Math.sqrt(super.getMuestra());
-        double tz = localizarTabla(numeroZ(nivelConfianza()));
+        double tz = localizarTabla(localizarTabla(nivelConfianza()));
         inta = super.getPromedio() - tz *(super.getDesviacionE()/raiz);
         return inta;
     }
