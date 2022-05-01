@@ -12,19 +12,17 @@ package Clases;
 public class Ejercicio {
     private int muestra;
     private double promedio;
-    private double varianza;
     private int nConfianza;
-    private int desviacionE;
+    private double desviacionE;
 
-    public Ejercicio(int muestra, double promedio, double varianza, int nConfianza, int desviacionE) {
+    public Ejercicio(int muestra, double promedio, int nConfianza, double desviacionE) {
         this.muestra = muestra;
         this.promedio = promedio;
-        this.varianza = varianza;
         this.nConfianza = nConfianza;
         this.desviacionE = desviacionE;
     }    
     
-    public double getnConfianza() {
+    public int getnConfianza() {
         return nConfianza;
     }
 
@@ -48,19 +46,11 @@ public class Ejercicio {
         this.promedio = promedio;
     }
 
-    public double getVarianza() {
-        return varianza;
-    }
-
-    public void setVarianza(double varianza) {
-        this.varianza = varianza;
-    }
-
-    public int getDesviacionE() {
+    public double getDesviacionE() {
         return desviacionE;
     }
 
-    public void setDesviacionE(int desviacionE) {
+    public void setDesviacionE(double desviacionE) {
         this.desviacionE = desviacionE;
     }
     

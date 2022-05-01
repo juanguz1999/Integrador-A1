@@ -2,40 +2,61 @@ package Clases;
 
 public class Tabla_z extends Ejercicio {
 
-    public Tabla_z(int muestra, double promedio, double varianza, int nConfianza, int desviacionE) {
-        super(muestra, promedio, varianza, nConfianza, desviacionE);
+    public Tabla_z(int muestra, double promedio, int nConfianza, double desviacionE) {
+        super(muestra, promedio, nConfianza, desviacionE);
     }
     
-    public double nivelConfianza() {
-        double alfa;
+    public double alfa() {
         double porcentaje;
-        double div;
-        double tz;
-        porcentaje = (super.getnConfianza() / 100);
+        double alfa;
+        double nc = super.getnConfianza();
+        porcentaje = (nc / 100);
         alfa = 1 - porcentaje;
-        div = (alfa/2);
-        tz = 1 - div;
-        return tz;
+        return alfa;
     }
 
-    public double localizarTabla(double tz) {
-        double a = 0;
-        return a;
+    public double NumeroZ() {
+        double z = 0;
+        switch (super.getnConfianza()){
+            case 50: 
+                z = 0.67;
+                break;
+            case 60:
+                z = 0.85;
+                break;
+            case 70:
+                z = 1.03;
+                break;
+            case 80:
+                z = 1.28;
+                break;
+            case 90:
+                z = 1.65;
+                break;
+            case 95:
+                z = 1.96;
+                break;
+            case 98:
+                z = 2.33;
+                break;
+            case 99:
+                z = 2.58;
+                break;
+        }
+        return z;
     }
     
     public double intervaloA(){
         double inta;
         double raiz = Math.sqrt(super.getMuestra());
-        double tz = localizarTabla(localizarTabla(nivelConfianza()));
-        inta = super.getPromedio() - tz *(super.getDesviacionE()/raiz);
+        inta = super.getPromedio() - NumeroZ() *(super.getDesviacionE()/raiz);
         return inta;
     }
     
     public double intervaloB(){
         double intb;
         double raiz = Math.sqrt(super.getMuestra());
-        double tz = localizarTabla(numeroZ(nivelConfianza()));
-        intb = super.getPromedio() + tz *(super.getDesviacionE()/raiz);
+        intb = super.getPromedio() + NumeroZ() *(super.getDesviacionE()/raiz);
         return intb;
     }
 
