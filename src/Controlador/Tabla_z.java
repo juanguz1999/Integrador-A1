@@ -1,4 +1,6 @@
-package Clases;
+package Controlador;
+
+import Clases.*;
 
 public class Tabla_z extends Ejercicio {
 
