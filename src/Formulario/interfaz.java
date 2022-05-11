@@ -1,4 +1,5 @@
 package Formulario;
+
 import Controlador.*;
 import java.text.DecimalFormat;
 
@@ -312,9 +313,9 @@ public class interfaz extends javax.swing.JFrame {
         double DesviacionEstandar = Double.parseDouble(txtDesviacionEstandar.getText());
         int nivelC = cbNivelConfianza.getSelectedIndex();
         int nc = 0;
-        
-        switch (nivelC){
-            case 1: 
+
+        switch (nivelC) {
+            case 1:
                 nc = 50;
                 break;
             case 2:
@@ -339,43 +340,47 @@ public class interfaz extends javax.swing.JFrame {
                 nc = 99;
                 break;
         }
-        
+
         Tabla_z c = new Tabla_z(muestra, promedio, nc, DesviacionEstandar);
-        
-        String Mmuestra =  String.valueOf(c.getMuestra());
-        lbMuestra.setText(Mmuestra);
-        
-        String Mpromedio =  String.valueOf(c.getPromedio());
-        lbPromedio.setText(Mpromedio);
-        
-        String MdesviacionE =  String.valueOf(c.getDesviacionE());
-        lbDesviacionEstandar.setText(MdesviacionE);
-        
-        String MnivelC =  String.valueOf(c.getnConfianza());
-        lbNivelDeConfianza.setText(MnivelC);
-        
-        String Malfa =  String.valueOf(c.alfa());
-        lbAlfa.setText(Malfa);
-        
-        String MZ =  String.valueOf(c.NumeroZ());
-        lbZ.setText(MZ);
-        
-        String Ma =  String.valueOf(c.intervaloA());
-        intAGrafico.setText(Ma);
-        
-        String Mb =  String.valueOf(c.intervaloB());
-        intBgrafico.setText(Mb);
-        
-        
-        //Procedimiento
-        txts.setText("");
+
+        //Dar formato a los numeros
         DecimalFormat df = new DecimalFormat("###.##");
         double inta = c.intervaloA();
-        txts.append(df.format(inta)+"<");
+        double intb = c.intervaloB();
+        double alfa = c.alfa();
+        //fin
+
+        //Imprimir valores
+        String Mmuestra = String.valueOf(c.getMuestra());
+        lbMuestra.setText(Mmuestra);
+
+        String Mpromedio = String.valueOf(c.getPromedio());
+        lbPromedio.setText(Mpromedio);
+
+        String MdesviacionE = String.valueOf(c.getDesviacionE());
+        lbDesviacionEstandar.setText(MdesviacionE);
+
+        String MnivelC = String.valueOf(c.getnConfianza());
+        lbNivelDeConfianza.setText(MnivelC);
         
-        
+        lbAlfa.setText(df.format(alfa));
+
+        String MZ = String.valueOf(c.NumeroZ());
+        lbZ.setText(MZ);
+
+        String Ma = String.valueOf(c.intervaloA());
+        intAGrafico.setText(Ma);
+
+        String Mb = String.valueOf(c.intervaloB());
+        intBgrafico.setText(Mb);
+
+        //Procedimiento
+        txts.setText("");
+        txts.append(df.format(inta) + "<u<" + df.format(intb));
+
         //interpretacion
-        interpretacion.setText("Con un " + nc +"%");
+        interpretacion.setText("Con un " + nc + "% se puede decir que la variable a analizar");
+        interpretacion.setText("\n esta comprendida entre los valores "+df.format(inta)+" y "+df.format(intb)+".");
     }//GEN-LAST:event_btnCalcularActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
@@ -393,7 +398,7 @@ public class interfaz extends javax.swing.JFrame {
         lbPromedio.setText("");
         lbZ.setText("");
         txts.setText("");
-        
+
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
