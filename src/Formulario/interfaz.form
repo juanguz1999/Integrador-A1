@@ -75,52 +75,47 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="cbNivelConfianza" min="-2" pref="111" max="-2" attributes="0"/>
-                                      <Component id="txtDesviacionEstandar" min="-2" pref="111" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace pref="13" max="32767" attributes="0"/>
-                              </Group>
-                              <Group type="102" attributes="0">
-                                  <Group type="103" groupAlignment="0" attributes="0">
                                       <Component id="txtProm" min="-2" pref="111" max="-2" attributes="0"/>
                                       <Component id="txtMuestra" min="-2" pref="111" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                               </Group>
-                          </Group>
-                      </Group>
-                      <Group type="102" alignment="1" attributes="0">
-                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="1" attributes="0">
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jLabel9" min="-2" pref="159" max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="1" attributes="0">
-                                          <Component id="jLabel7" min="-2" pref="124" max="-2" attributes="0"/>
-                                          <Component id="jLabel8" min="-2" pref="124" max="-2" attributes="0"/>
-                                          <Component id="jLabel10" min="-2" pref="124" max="-2" attributes="0"/>
-                                          <Component id="jLabel11" min="-2" pref="124" max="-2" attributes="0"/>
-                                          <Component id="jLabel12" min="-2" pref="124" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Component id="btnCalcular" min="-2" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="cbNivelConfianza" min="-2" pref="111" max="-2" attributes="0"/>
+                                          <Component id="txtDesviacionEstandar" min="-2" pref="111" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
-                                  <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="1" attributes="0">
-                                      <Component id="lbPromedio" min="-2" max="-2" attributes="0"/>
-                                      <Component id="lbMuestra" min="-2" max="-2" attributes="0"/>
-                                      <Component id="lbNivelDeConfianza" alignment="1" min="-2" max="-2" attributes="0"/>
-                                      <Component id="lbAlfa" alignment="1" min="-2" max="-2" attributes="0"/>
-                                      <Component id="lbZ" alignment="1" min="-2" max="-2" attributes="0"/>
-                                      <Component id="lbDesviacionEstandar" alignment="1" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="1" attributes="0">
-                                  <Component id="btnCalcular" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+                                  <EmptySpace pref="44" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
                   </Group>
+              </Group>
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jLabel9" min="-2" pref="159" max="-2" attributes="0"/>
+                      <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                          <Component id="jLabel7" min="-2" pref="124" max="-2" attributes="0"/>
+                          <Component id="jLabel8" min="-2" pref="124" max="-2" attributes="0"/>
+                          <Component id="jLabel10" min="-2" pref="124" max="-2" attributes="0"/>
+                          <Component id="jLabel11" min="-2" pref="124" max="-2" attributes="0"/>
+                          <Component id="jLabel12" min="-2" pref="124" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Component id="lbPromedio" min="-2" max="-2" attributes="0"/>
+                      <Component id="lbMuestra" min="-2" max="-2" attributes="0"/>
+                      <Component id="lbNivelDeConfianza" alignment="1" min="-2" max="-2" attributes="0"/>
+                      <Component id="lbAlfa" alignment="1" min="-2" max="-2" attributes="0"/>
+                      <Component id="lbZ" alignment="1" min="-2" max="-2" attributes="0"/>
+                      <Component id="lbDesviacionEstandar" alignment="1" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -343,11 +338,17 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
+                  <Component id="interpretacion" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+              </Group>
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace pref="61" max="32767" attributes="0"/>
-                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="interpretacion" min="-2" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="txts2" min="-2" max="-2" attributes="0"/>
+                      <Component id="txts" min="-2" pref="290" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
@@ -369,20 +370,20 @@
                               <EmptySpace min="-2" pref="217" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
-                              <Component id="jScrollPane1" min="-2" pref="239" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="241" max="-2" attributes="0"/>
+                              <Component id="lbformula" min="-2" pref="200" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="conf1" min="-2" max="-2" attributes="0"/>
                                   <Component id="conf2" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="202" max="-2" attributes="0"/>
                           </Group>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <Component id="jLabel19" min="-2" pref="124" max="-2" attributes="0"/>
-                          <EmptySpace max="32767" attributes="0"/>
-                          <Component id="jLabel14" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="194" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Component id="jLabel19" min="-2" pref="124" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="jLabel14" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="194" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                   </Group>
               </Group>
@@ -418,18 +419,22 @@
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jScrollPane1" min="-2" pref="194" max="-2" attributes="0"/>
                       <Group type="102" attributes="0">
                           <Component id="conf1" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                           <Component id="conf2" min="-2" max="-2" attributes="0"/>
                       </Group>
+                      <Component id="lbformula" min="-2" pref="37" max="-2" attributes="0"/>
                   </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Component id="txts" min="-2" pref="24" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="txts2" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="135" max="-2" attributes="0"/>
                   <Component id="interpretacion" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Component id="jButton2" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="33" max="32767" attributes="0"/>
+                  <EmptySpace pref="26" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -443,21 +448,6 @@
             <Property name="text" type="java.lang.String" value="Soluci&#xf3;n"/>
           </Properties>
         </Component>
-        <Container class="javax.swing.JScrollPane" name="jScrollPane1">
-          <AuxValues>
-            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
-          </AuxValues>
-
-          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
-          <SubComponents>
-            <Component class="javax.swing.JTextArea" name="txts">
-              <Properties>
-                <Property name="columns" type="int" value="20"/>
-                <Property name="rows" type="int" value="5"/>
-              </Properties>
-            </Component>
-          </SubComponents>
-        </Container>
         <Component class="javax.swing.JButton" name="jButton2">
           <Properties>
             <Property name="text" type="java.lang.String" value="Reiniciar"/>
@@ -469,14 +459,8 @@
         <Component class="javax.swing.JLabel" name="lbImage">
         </Component>
         <Component class="javax.swing.JLabel" name="intAGrafico">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="intervalo 1"/>
-          </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="intBgrafico">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="intervalo 2"/>
-          </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel19">
           <Properties>
@@ -488,7 +472,7 @@
         </Component>
         <Component class="javax.swing.JLabel" name="interpretacion">
           <Properties>
-            <Property name="text" type="java.lang.String" value="jLabel17"/>
+            <Property name="horizontalAlignment" type="int" value="0"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel14">
@@ -504,6 +488,18 @@
         <Component class="javax.swing.JLabel" name="conf2">
           <Properties>
             <Property name="text" type="java.lang.String" value="2"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="txts">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="paso1"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lbformula">
+        </Component>
+        <Component class="javax.swing.JLabel" name="txts2">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="paso2"/>
           </Properties>
         </Component>
       </SubComponents>
