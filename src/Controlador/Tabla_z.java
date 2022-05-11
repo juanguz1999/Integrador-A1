@@ -1,7 +1,5 @@
 package Controlador;
-
 import Clases.*;
-
 public class Tabla_z extends Ejercicio {
 
     public Tabla_z(int muestra, double promedio, int nConfianza, double desviacionE) {

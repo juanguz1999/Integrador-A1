@@ -1,5 +1,4 @@
 package Formulario;
-
 import Controlador.*;
 
 public class interfaz extends javax.swing.JFrame {
