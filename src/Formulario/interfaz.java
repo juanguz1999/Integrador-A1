@@ -450,6 +450,7 @@ public class interfaz extends javax.swing.JFrame {
         lbNivelDeConfianza.setText("");
         cbNivelConfianza.setSelectedIndex(0);
         lbImage.setIcon(null);
+        lbformula.setIcon(null);
         conf1.setText("");
         conf2.setText("");
         lbPromedio.setText("");
