@@ -69,7 +69,7 @@ public class interfaz extends javax.swing.JFrame {
         jLabel3.setText("Promedio X̅ :");
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel4.setText("Desviacion estandar:");
+        jLabel4.setText("Desviación estandar:");
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel5.setText("Nivel de Confianza:");
@@ -84,7 +84,7 @@ public class interfaz extends javax.swing.JFrame {
         jLabel8.setText("Promedio X̅ :");
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel9.setText("Desviacion estandar σ :");
+        jLabel9.setText("Desviación estandar σ :");
 
         jLabel10.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel10.setText("Nivel de Confianza:");
@@ -215,7 +215,7 @@ public class interfaz extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel13.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel13.setText("Grafico");
+        jLabel13.setText("Gráfico");
 
         jButton2.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.darcula.selection.color1"));
         jButton2.setText("Reiniciar");
@@ -238,7 +238,7 @@ public class interfaz extends javax.swing.JFrame {
         txts2.setText("paso2");
 
         jLabel15.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel15.setText("Interpretacion");
+        jLabel15.setText("Interpretación");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
