@@ -2,6 +2,8 @@ package Formulario;
 
 import Controlador.*;
 import java.text.DecimalFormat;
+import java.awt.Image;
+import javax.swing.ImageIcon;
 
 public class interfaz extends javax.swing.JFrame {
 
@@ -42,11 +44,14 @@ public class interfaz extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         txts = new javax.swing.JTextArea();
         jButton2 = new javax.swing.JButton();
-        jLabel16 = new javax.swing.JLabel();
+        lbImage = new javax.swing.JLabel();
         intAGrafico = new javax.swing.JLabel();
         intBgrafico = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
         interpretacion = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        conf1 = new javax.swing.JLabel();
+        conf2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -223,8 +228,6 @@ public class interfaz extends javax.swing.JFrame {
             }
         });
 
-        jLabel16.setText("Grafico");
-
         intAGrafico.setText("intervalo 1");
 
         intBgrafico.setText("intervalo 2");
@@ -234,58 +237,82 @@ public class interfaz extends javax.swing.JFrame {
 
         interpretacion.setText("jLabel17");
 
+        jLabel14.setText("Confianza");
+
+        conf1.setText("1");
+
+        conf2.setText("2");
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addGap(189, 189, 189)
-                .addComponent(intAGrafico)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(intBgrafico)
-                .addGap(204, 204, 204))
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(332, 332, 332)
-                .addComponent(jLabel16)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(39, Short.MAX_VALUE)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addGap(293, 293, 293)
-                                .addComponent(jButton2)))
-                        .addGap(327, 327, 327))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 678, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(22, 22, 22))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                        .addComponent(interpretacion)
-                        .addGap(340, 340, 340))))
+                .addContainerGap(61, Short.MAX_VALUE)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(interpretacion)
+                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(jPanel2Layout.createSequentialGroup()
+                                    .addGap(293, 293, 293)
+                                    .addComponent(jButton2))
+                                .addGroup(jPanel2Layout.createSequentialGroup()
+                                    .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(lbImage, javax.swing.GroupLayout.PREFERRED_SIZE, 347, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(jPanel2Layout.createSequentialGroup()
+                                    .addGap(208, 208, 208)
+                                    .addComponent(intAGrafico)
+                                    .addGap(113, 113, 113)
+                                    .addComponent(intBgrafico)))
+                            .addGap(217, 217, 217))
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(241, 241, 241)
+                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(conf1)
+                                .addComponent(conf2))
+                            .addGap(202, 202, 202)))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel14)
+                        .addGap(194, 194, 194))))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(18, 18, 18)
-                .addComponent(jLabel13)
-                .addGap(29, 29, 29)
-                .addComponent(jLabel16)
-                .addGap(84, 84, 84)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(intBgrafico)
-                    .addComponent(intAGrafico))
-                .addGap(52, 52, 52)
-                .addComponent(jLabel19)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(lbImage, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel13)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(intBgrafico)
+                        .addGap(52, 52, 52))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                        .addComponent(intAGrafico)
+                        .addGap(66, 66, 66)))
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel19)
+                    .addComponent(jLabel14))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(conf1)
+                        .addGap(10, 10, 10)
+                        .addComponent(conf2)))
+                .addGap(18, 18, 18)
                 .addComponent(interpretacion)
-                .addGap(24, 24, 24)
+                .addGap(12, 12, 12)
                 .addComponent(jButton2)
-                .addContainerGap(21, Short.MAX_VALUE))
+                .addContainerGap(33, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -295,7 +322,8 @@ public class interfaz extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -313,31 +341,40 @@ public class interfaz extends javax.swing.JFrame {
         double DesviacionEstandar = Double.parseDouble(txtDesviacionEstandar.getText());
         int nivelC = cbNivelConfianza.getSelectedIndex();
         int nc = 0;
+        double div = 0;
 
         switch (nivelC) {
             case 1:
                 nc = 50;
+                div = 0.5;
                 break;
             case 2:
                 nc = 60;
+                div = 0.6;
                 break;
             case 3:
                 nc = 70;
+                div = 0.7;
                 break;
             case 4:
                 nc = 80;
+                div = 0.8;
                 break;
             case 5:
                 nc = 90;
+                div = 0.9;
                 break;
             case 6:
                 nc = 95;
+                div = 0.95;
                 break;
             case 7:
                 nc = 98;
+                div = 0.98;
                 break;
             case 8:
                 nc = 99;
+                div = 0.99;
                 break;
         }
 
@@ -363,24 +400,30 @@ public class interfaz extends javax.swing.JFrame {
         String MnivelC = String.valueOf(c.getnConfianza());
         lbNivelDeConfianza.setText(MnivelC);
         
+        conf1.setText("1 - 𝛼 = "+div);
+        conf2.setText("𝛼 = "+df.format(alfa));
+
         lbAlfa.setText(df.format(alfa));
 
         String MZ = String.valueOf(c.NumeroZ());
         lbZ.setText(MZ);
 
-        String Ma = String.valueOf(c.intervaloA());
-        intAGrafico.setText(Ma);
+        intAGrafico.setText(df.format(inta));
+        intBgrafico.setText(df.format(intb));
 
-        String Mb = String.valueOf(c.intervaloB());
-        intBgrafico.setText(Mb);
+        //Imagen
+        ImageIcon img1 = new ImageIcon(getClass().getResource("/Imagen/Intervalo.png"));
+        //la imagen lo adapta al control de la etiqueta 
+        Image imgesc = img1.getImage().getScaledInstance(lbImage.getWidth(),
+                lbImage.getHeight(), Image.SCALE_SMOOTH);
+        lbImage.setIcon(new ImageIcon(imgesc));
 
         //Procedimiento
         txts.setText("");
-        txts.append(df.format(inta) + "<u<" + df.format(intb));
+        txts.append(df.format(inta) + "< μ <" + df.format(intb));
 
         //interpretacion
-        interpretacion.setText("Con un " + nc + "% se puede decir que la variable a analizar");
-        interpretacion.setText("\n esta comprendida entre los valores "+df.format(inta)+" y "+df.format(intb)+".");
+        interpretacion.setText("Con un " + nc + "% de confianza se puede decir que la variable a analizar esta comprendida entre los valores " + df.format(inta) + " y " + df.format(intb) + ".");
     }//GEN-LAST:event_btnCalcularActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
@@ -439,6 +482,8 @@ public class interfaz extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnCalcular;
     private javax.swing.JComboBox<String> cbNivelConfianza;
+    private javax.swing.JLabel conf1;
+    private javax.swing.JLabel conf2;
     private javax.swing.JLabel intAGrafico;
     private javax.swing.JLabel intBgrafico;
     private javax.swing.JLabel interpretacion;
@@ -448,7 +493,7 @@ public class interfaz extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -463,6 +508,7 @@ public class interfaz extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lbAlfa;
     private javax.swing.JLabel lbDesviacionEstandar;
+    private javax.swing.JLabel lbImage;
     private javax.swing.JLabel lbMuestra;
     private javax.swing.JLabel lbNivelDeConfianza;
     private javax.swing.JLabel lbPromedio;
