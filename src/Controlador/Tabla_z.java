@@ -50,14 +50,25 @@ public class Tabla_z extends Ejercicio {
         double inta;
         double raiz = Math.sqrt(super.getMuestra());
         inta = super.getPromedio() - NumeroZ() *(super.getDesviacionE()/raiz);
-        return inta;
+        return Math.round(inta*100.0)/100.0;
     }
     
     public double intervaloB(){
         double intb;
         double raiz = Math.sqrt(super.getMuestra());
         intb = super.getPromedio() + NumeroZ() *(super.getDesviacionE()/raiz);
-        return intb;
+        return Math.round(intb*100.0)/100.0;
     }
+    
+    
+     
+    public String paso1(){
+        return super.getPromedio()+"-"+NumeroZ()+"x"+super.getDesviacionE()+"/√"+super.getMuestra()+" < μ < "+super.getPromedio()+"+"+NumeroZ()+"x"+super.getDesviacionE()+"/√"+super.getMuestra();
+    }
+    
+    public String paso2(){
+        return intervaloA()+"< μ <"+intervaloB();
+    }
+
 
 }
