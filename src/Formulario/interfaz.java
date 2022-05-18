@@ -1,7 +1,6 @@
 package Formulario;
 
 import Controlador.*;
-import java.text.DecimalFormat;
 import java.awt.Image;
 import javax.swing.ImageIcon;
 
@@ -392,7 +391,6 @@ public class interfaz extends javax.swing.JFrame {
         Tabla_z c = new Tabla_z(muestra, promedio, nc, DesviacionEstandar);
 
         //Dar formato a los numeros
-        DecimalFormat df = new DecimalFormat("###.##");
         double inta = c.intervaloA();
         double intb = c.intervaloB();
         double alfa = c.alfa();
@@ -412,15 +410,15 @@ public class interfaz extends javax.swing.JFrame {
         lbNivelDeConfianza.setText(MnivelC);
 
         conf1.setText("1 - 𝛼 = "+div);
-        conf2.setText("𝛼 = "+df.format(alfa));
+        conf2.setText("𝛼 = "+alfa);
 
-        lbAlfa.setText(df.format(alfa));
+        lbAlfa.setText(Double.toString(alfa));
 
         String MZ = String.valueOf(c.NumeroZ());
         lbZ.setText(MZ);
 
-        intAGrafico.setText(df.format(inta));
-        intBgrafico.setText(df.format(intb));
+        intAGrafico.setText(Double.toString(inta));
+        intBgrafico.setText(Double.toString(intb));
 
         //Imagen
         ImageIcon img1 = new ImageIcon(getClass().getResource("/Imagen/Intervalo.png"));
@@ -441,7 +439,7 @@ public class interfaz extends javax.swing.JFrame {
         txts2.setText(c.paso2());
 
         //interpretacion
-        interpretacion.setText("Con un " + nc + "% de confianza se puede decir que la variable a analizar esta comprendida entre los valores " + df.format(inta) + " y " + df.format(intb) + ".");
+        interpretacion.setText("Con un " + nc + "% de confianza se puede decir que la variable a analizar esta comprendida entre los valores " + Double.toString(inta) + " y " + Double.toString(intb) + ".");
     }//GEN-LAST:event_btnCalcularActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed

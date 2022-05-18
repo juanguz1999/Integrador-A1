@@ -9,10 +9,12 @@ public class Tabla_z extends Ejercicio {
     public double alfa() {
         double porcentaje;
         double alfa;
+        double alfac;
         double nc = super.getnConfianza();
         porcentaje = (nc / 100);
         alfa = 1 - porcentaje;
-        return alfa;
+        alfac = Math.round(alfa*100.0)/100.0;
+        return alfac;
     }
 
     public double NumeroZ() {
