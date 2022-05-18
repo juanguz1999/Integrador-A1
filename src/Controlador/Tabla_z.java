@@ -16,6 +16,14 @@ public class Tabla_z extends Ejercicio {
         alfac = Math.round(alfa*100.0)/100.0;
         return alfac;
     }
+    
+    public double ubiTablaZ(){
+        
+        double resul;
+        resul = 1 - (alfa()/2);
+        
+        return Math.round(resul*1000.0)/1000.0;
+    }
 
     public double NumeroZ() {
         double z = 0;

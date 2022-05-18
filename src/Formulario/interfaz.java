@@ -53,6 +53,10 @@ public class interfaz extends javax.swing.JFrame {
         lbformula = new javax.swing.JLabel();
         txts2 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
+        lbalfa = new javax.swing.JLabel();
+        lbubiz = new javax.swing.JLabel();
+        lbresulz = new javax.swing.JLabel();
+        lbTablaz = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -208,13 +212,15 @@ public class interfaz extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel12)
                     .addComponent(lbZ))
-                .addContainerGap(59, Short.MAX_VALUE))
+                .addContainerGap(72, Short.MAX_VALUE))
         );
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel13.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel13.setText("Gráfico");
+        jPanel2.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(64, 16, 124, -1));
 
         jButton2.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.darcula.selection.color1"));
         jButton2.setText("Reiniciar");
@@ -223,107 +229,38 @@ public class interfaz extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
+        jPanel2.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(327, 501, -1, -1));
+        jPanel2.add(lbImage, new org.netbeans.lib.awtextra.AbsoluteConstraints(242, 6, 347, 126));
+        jPanel2.add(intAGrafico, new org.netbeans.lib.awtextra.AbsoluteConstraints(312, 138, 100, 25));
+        jPanel2.add(intBgrafico, new org.netbeans.lib.awtextra.AbsoluteConstraints(464, 138, 101, 25));
 
         jLabel19.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel19.setText("Procedimiento");
+        jPanel2.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(64, 183, 124, -1));
 
         interpretacion.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jPanel2.add(interpretacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(58, 436, 691, 24));
 
         jLabel14.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel14.setText("Confianza");
+        jPanel2.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(698, 183, -1, -1));
+        jPanel2.add(conf1, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 212, 71, 22));
+        jPanel2.add(conf2, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 242, 88, 31));
 
         txts.setText("paso1");
+        jPanel2.add(txts, new org.netbeans.lib.awtextra.AbsoluteConstraints(64, 298, 290, 24));
+        jPanel2.add(lbformula, new org.netbeans.lib.awtextra.AbsoluteConstraints(64, 212, 200, 37));
 
         txts2.setText("paso2");
+        jPanel2.add(txts2, new org.netbeans.lib.awtextra.AbsoluteConstraints(64, 340, -1, -1));
 
         jLabel15.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel15.setText("Interpretación");
-
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(61, Short.MAX_VALUE)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(txts2)
-                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addGroup(jPanel2Layout.createSequentialGroup()
-                            .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel14)
-                            .addGap(194, 194, 194))
-                        .addGroup(jPanel2Layout.createSequentialGroup()
-                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(jPanel2Layout.createSequentialGroup()
-                                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(lbformula, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(txts, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGap(218, 218, 218)
-                                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(conf1, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(conf2, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addGroup(jPanel2Layout.createSequentialGroup()
-                                    .addGap(248, 248, 248)
-                                    .addComponent(intAGrafico, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(52, 52, 52)
-                                    .addComponent(intBgrafico, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(jPanel2Layout.createSequentialGroup()
-                                    .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(54, 54, 54)
-                                    .addComponent(lbImage, javax.swing.GroupLayout.PREFERRED_SIZE, 347, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGap(235, 235, 235)))))
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(327, 327, 327)
-                        .addComponent(jButton2))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(58, 58, 58)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(interpretacion, javax.swing.GroupLayout.PREFERRED_SIZE, 691, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel15))))
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(16, 16, 16)
-                        .addComponent(jLabel13)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel19)
-                            .addComponent(jLabel14))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(lbImage, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(intAGrafico, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(intBgrafico, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(conf1, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(8, 8, 8)
-                        .addComponent(conf2, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(lbformula, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 11, Short.MAX_VALUE)
-                        .addComponent(txts, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(18, 18, 18)
-                .addComponent(txts2)
-                .addGap(23, 23, 23)
-                .addComponent(jLabel15)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(interpretacion, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(41, 41, 41)
-                .addComponent(jButton2)
-                .addGap(24, 24, 24))
-        );
+        jPanel2.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(58, 413, -1, -1));
+        jPanel2.add(lbalfa, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 322, 50, 20));
+        jPanel2.add(lbubiz, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 328, 60, 20));
+        jPanel2.add(lbresulz, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 320, 50, 20));
+        jPanel2.add(lbTablaz, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 310, 307, 55));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -332,8 +269,8 @@ public class interfaz extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -413,6 +350,8 @@ public class interfaz extends javax.swing.JFrame {
         conf2.setText("𝛼 = "+alfa);
 
         lbAlfa.setText(Double.toString(alfa));
+        lbubiz.setText(Double.toString(c.ubiTablaZ()));
+        lbresulz.setText(Double.toString(c.NumeroZ()));
 
         String MZ = String.valueOf(c.NumeroZ());
         lbZ.setText(MZ);
@@ -426,6 +365,14 @@ public class interfaz extends javax.swing.JFrame {
         Image imgesc = img1.getImage().getScaledInstance(lbImage.getWidth(),
             lbImage.getHeight(), Image.SCALE_SMOOTH);
         lbImage.setIcon(new ImageIcon(imgesc));
+        
+        //Imagen tabla z
+        ImageIcon img3 = new ImageIcon(getClass().getResource("/Imagen/tabla_Z.jpg"));
+        //la imagen lo adapta al control de la etiqueta
+        Image imgesc3 = img3.getImage().getScaledInstance(lbTablaz.getWidth(),
+            lbTablaz.getHeight(), Image.SCALE_SMOOTH);
+        lbTablaz.setIcon(new ImageIcon(imgesc3));
+        lbalfa.setText(Double.toString(alfa));
 
         //Procedimiento
         //formula
@@ -457,6 +404,7 @@ public class interfaz extends javax.swing.JFrame {
         cbNivelConfianza.setSelectedIndex(0);
         lbImage.setIcon(null);
         lbformula.setIcon(null);
+        lbTablaz.setIcon(null);
         conf1.setText("");
         conf2.setText("");
         lbPromedio.setText("");
@@ -533,8 +481,12 @@ public class interfaz extends javax.swing.JFrame {
     private javax.swing.JLabel lbMuestra;
     private javax.swing.JLabel lbNivelDeConfianza;
     private javax.swing.JLabel lbPromedio;
+    private javax.swing.JLabel lbTablaz;
     private javax.swing.JLabel lbZ;
+    private javax.swing.JLabel lbalfa;
     private javax.swing.JLabel lbformula;
+    private javax.swing.JLabel lbresulz;
+    private javax.swing.JLabel lbubiz;
     private javax.swing.JTextField txtDesviacionEstandar;
     private javax.swing.JTextField txtMuestra;
     private javax.swing.JTextField txtProm;
