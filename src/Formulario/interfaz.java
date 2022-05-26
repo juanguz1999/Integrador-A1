@@ -411,6 +411,9 @@ public class interfaz extends javax.swing.JFrame {
         lbZ.setText("");
         txts.setText("");
         txts2.setText("");
+        lbalfa.setText("");
+        lbubiz.setText("");
+        lbresulz.setText("");
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
